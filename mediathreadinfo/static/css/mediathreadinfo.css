@@ -38,8 +38,10 @@ body.page-home {
 }
 
 body .navbar {
-    /*background-color: #000;
-    background-image: none;*/
+}
+
+body .navbar-nav {
+    float: right;
 }
 
 body .navbar-inverse .navbar-nav > li > a {
