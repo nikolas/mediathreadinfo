@@ -51,3 +51,9 @@ body footer {
     color: #777;
     font-size: 0.75em;
 }
+
+/* override some bad dropdown css from mezzanine */
+body .nav > li > a.dropdown-toggle:hover {
+    background-color: inherit;
+    color: white;
+}
