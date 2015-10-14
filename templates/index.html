@@ -2,7 +2,6 @@
 {% load i18n %}
 
 {% block meta_title %}{% trans "Home" %}{% endblock %}
-{% block title %}{% trans "Home" %}{% endblock %}
 
 {% block breadcrumb_menu %}
 <li class="active">{% trans "Home" %}</li>
@@ -10,6 +9,7 @@
 
 {% block main %}
 {% blocktrans %}
+<div class="rolph-container rolph-header">
 <div class="pane-content">
     <div class="fieldable-panels-pane">
         <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden">
@@ -20,6 +20,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 <h2>Congratulations!</h2>
 <p>
