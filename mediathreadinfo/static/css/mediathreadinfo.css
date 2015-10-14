@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url(../fonts/300_29AE7A_1_0.eot);
+    src: url(../fonts/300_29AE7A_1_0.eot?#iefix) format("embedded-opentype"),url(../fonts/300_29AE7A_1_0.ttf) format("truetype"),url(../fonts/300_29AE7A_1_0.woff) format("woff");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url(../fonts/600_29AE7A_0_0.eot);
+    src: url(../fonts/600_29AE7A_0_0.eot?#iefix) format("embedded-opentype"),url(../fonts/600_29AE7A_0_0.ttf) format("truetype"),url(../fonts/600_29AE7A_0_0.woff) format("woff");
+    font-style: normal;
+    font-weight: 600;
+}
+
+body {
+    background-image: url('../img/bg_pattern.png');
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1, .navbar a, .btn {
+    font-family: 'Avenir', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+body h2, body h3, body h4, body h5, body h6 {
+    font-family: 'Avenir', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+body.page-home {
+    background-image: url('../img/home-bg.png');
+    background-repeat: repeat-x;
+    background-position: center top;
+}
+
+body .navbar {
+    /*background-color: #000;
+    background-image: none;*/
+}
+
+body .navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+body footer {
+    background-color: #282828;
+    color: #777;
+    font-size: 0.75em;
+}
