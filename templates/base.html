@@ -30,12 +30,8 @@
 {% block extra_css %}{% endblock %}
 {% endcompress %}
 
-{% compress js %}
-<script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-{% block extra_js %}{% endblock %}
-{% endcompress %}
 
 <!--[if lt IE 9]>
 <script src="{% static "js/html5shiv.js" %}"></script>
@@ -69,7 +65,7 @@
                 About
                 <span class="caret"></span>
                 <ul class="dropdown-menu">
-                    <li><a href="/about/">About Mediathread</a></li>
+                    <li><a href="/about-mediathread/">About Mediathread</a></li>
                     <li><a href="#">Watch the Video</a></li>
                     <li><a href="/cases/">Cases</a></li>
                     <li><a href="/research/">Research</a></li>
