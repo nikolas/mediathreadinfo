@@ -68,6 +68,11 @@ body .nav > li > a.dropdown-toggle:hover {
     margin-bottom: 1em;
 }
 
+.rolph-quarter {
+    width: 25%;
+    float: left;
+}
+
 .view-header {
     background-color: #000;
     font-size: 18px;
