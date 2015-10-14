@@ -73,6 +73,26 @@ body .nav > li > a.dropdown-toggle:hover {
     float: left;
 }
 
+.rolph-quarter a {
+    color: #f5f5f5;
+    font-family: 'Avenir', san-serif;
+    font-weight: 600;
+}
+
+.home-started-button {
+    background-color: #a9c42f;
+    height: 255px;
+    padding: 125px 10px;
+}
+
+.home-started-button p a {
+    color: #fff;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 38px;
+}
+
 .view-header {
     background-color: #000;
     font-size: 18px;
