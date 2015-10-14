@@ -31,7 +31,7 @@ body h2, body h3, body h4, body h5, body h6 {
     font-weight: 600;
 }
 
-body.page-home {
+body#page-home {
     background-image: url('../img/home-bg.png');
     background-repeat: repeat-x;
     background-position: center top;
@@ -60,16 +60,23 @@ body .nav > li > a.dropdown-toggle:hover {
     color: white;
 }
 
-.rolph-header {
+.front-banner {
     padding: 75px 0;
-}
-
-.rolph-container {
     color: white;
     text-align: center;
-    background-image: url('../img/home-bg.png');
-    background-repeat: repeat-x;
-    background-position: center top;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.view-header {
+    background-color: #000;
+    font-size: 18px;
+    font-weight: 200;
+    color: #fff;
+    padding: 14px;
+    margin: 0;
+}
+
+.view-header a {
+    color: #fff;
 }

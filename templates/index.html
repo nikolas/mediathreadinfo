@@ -2,6 +2,7 @@
 {% load i18n %}
 
 {% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block body_id %}page-home{% endblock %}
 
 {% block breadcrumb_menu %}
 <li class="active">{% trans "Home" %}</li>
@@ -9,8 +10,7 @@
 
 {% block main %}
 {% blocktrans %}
-<div class="rolph-container rolph-header">
-<div class="pane-content">
+<div class="front-banner">
     <div class="fieldable-panels-pane">
         <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden">
             <div class="field-items">
@@ -21,6 +21,105 @@
         </div>
     </div>
 </div>
-</div>
+
+<section class="section">
+    <div class="container">
+        <div class="rolph-container rolph-quarter-content clearfix row-fluid">
+            <div class="rolph-column-content-region rolph-quarter1 rolph-quarter panel-panel span3">
+                <div class="rolph-column-content-region-inner rolph-quarter1-inner rolph-quarter-inner panel-panel-inner">
+                    <div class="panel-pane pane-fieldable-panels-pane pane-fpid-43 home-block1 pane-bundle-text">
+
+
+
+                        <div class="pane-content">
+                            <div class="fieldable-panels-pane">
+                                <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><img height="227" width="303" class="media-element file-default" src="http://mediathread.info/sites/default/files/shakespearemeth_1.jpg" alt="" title=""></p>
+                                            <p><a href="/%23/about-mediathread/">Learn about Mediathread</a></p>
+                            </div></div></div></div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="rolph-column-content-region rolph-quarter2 rolph-quarter panel-panel span3">
+                <div class="rolph-column-content-region-inner rolph-quarter2-inner rolph-quarter-inner panel-panel-inner">
+                    <div class="panel-pane pane-fieldable-panels-pane pane-fpid-45 home-block2 pane-bundle-text">
+
+
+
+                        <div class="pane-content">
+                            <div class="fieldable-panels-pane">
+                                <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><img height="213" width="285" class="media-element file-default" src="http://mediathread.info/sites/default/files/home-block-020413.png" alt="" title=""></p>
+                                            <p><a href="/%23/cases/">View Use Cases</a></p>
+                            </div></div></div></div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="rolph-column-content-region rolph-quarter3 rolph-quarter panel-panel span3">
+                <div class="rolph-column-content-region-inner rolph-quarter3-inner rolph-quarter-inner panel-panel-inner">
+                    <div class="panel-pane pane-fieldable-panels-pane pane-fpid-48 home-block3 pane-bundle-text">
+
+
+
+                        <div class="pane-content">
+                            <div class="fieldable-panels-pane">
+                                <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><img height="213" width="284" class="media-element file-default" src="http://mediathread.info/sites/default/files/home-block-020413_3_0.png" alt="" title=""></p>
+                                            <p><a href="/%23/collections/">Get Involved</a></p>
+                                            <p></p>
+                            </div></div></div></div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="rolph-column-content-region rolph-quarter4 rolph-quarter panel-panel span3">
+                <div class="rolph-column-content-region-inner rolph-quarter4-inner rolph-quarter-inner panel-panel-inner">
+                    <div class="panel-pane pane-fieldable-panels-pane pane-fpid-57 home-started-button pane-bundle-text">
+
+
+
+                        <div class="pane-content">
+                            <div class="fieldable-panels-pane">
+                                <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><a href="/%23/instructors/">Get started with Mediathread</a></p>
+                            </div></div></div></div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 {% endblocktrans %}
+
+
+<div class="col-md-3 right">
+    <div class="view-header">
+        <a href="http://twitter.com/mediathreadinfo" target="_blank">
+            @mediathreadinfo on twitter
+        </a>
+    </div>
+    {% include "includes/language_selector.html" %}
+    {% include "includes/user_panel.html" %}
+
+    <div class="panel panel-default">
+    <div class="panel-body">
+    {% block right_panel %}
+    {% include "twitter/tweets.html" %}
+    {% endblock %}
+    </div>
+    </div>
+    <div class="view-footer">
+        <a href="http://twitter.com/mediathreadinfo" target="_blank">
+            Follow @mediathreadinfo
+        </a>
+    </div>
+</div>
 {% endblock %}
