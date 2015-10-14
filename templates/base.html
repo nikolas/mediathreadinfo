@@ -55,13 +55,12 @@
             </button>
 
             {% block navbar_title %}
-            {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
-            {% if settings.SITE_TAGLINE %}<p class="navbar-text visible-lg">{{ settings.SITE_TAGLINE }}</p>{% endif %}
+            <img style="max-height: 70px;" src="{% static 'img/menu-logo.png' %}">
             {% endblock%}
         </div>
 
         <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav pull-right" style="margin-top: 10px;>
                 <li><a href="/">Home</a></li>
                 <li>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"
