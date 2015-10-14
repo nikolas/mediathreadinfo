@@ -82,7 +82,15 @@
 {% endif %}
 {% endnevercache %}
 
-<h1 style="margin-top: 60px;">{% block title %}{% endblock %}</h1>
+<div class="panel-pane pane-node-title header-page">
+    <div class="pane-content">
+        <h2>
+            <a href="/content/faq" class="active">
+                {% block title %}{% endblock %}
+            </a>
+        </h2>
+    </div>
+</div>
 
 </div>
 
@@ -93,23 +101,6 @@
     {% block main %}{% endblock %}
 </div>
 
-<!--
-twitter
-<div class="col-md-3 right">
-    {% nevercache %}
-    {% include "includes/language_selector.html" %}
-    {% include "includes/user_panel.html" %}
-    {% endnevercache %}
-    <div class="panel panel-default">
-    <div class="panel-body">
-    {% block right_panel %}
-    {% ifinstalled mezzanine.twitter %}
-    {% include "twitter/tweets.html" %}
-    {% endifinstalled %}
-    {% endblock %}
-    </div>
-    </div>
-</div>-->
 
 </div>
 </div>

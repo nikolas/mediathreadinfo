@@ -105,3 +105,33 @@ body .nav > li > a.dropdown-toggle:hover {
 .view-header a {
     color: #fff;
 }
+
+body:not(#page-home) .header-page {
+    background: url('../img/header-case.png') center;
+    height: 200px;
+}
+
+body:not(#page-home) .header-page .pane-content {
+    position: relative;
+    top: 100px;
+    padding: 4px 25px 6px 25px;
+    left: 0;
+    background-color: #000;
+    float: left;
+}
+
+.header-page .pane-content a {
+    color: #fff;
+    font-weight: normal;
+}
+
+.code-ccnmtl {
+    padding: 3em 0 .5em 3em;
+}
+
+.code-ccnmtl h2 {
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 0 0 1em 0;
+}
