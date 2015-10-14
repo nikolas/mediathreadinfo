@@ -16,11 +16,10 @@
 {% endifinstalled %}
 
 {% compress css %}
-<link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static "css/mediathreadinfo.css" %}">
 <link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
-<link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}">
 {% if LANGUAGE_BIDI %}
-<link rel="stylesheet" href="{% static "css/bootstrap-rtl.css" %}">
 {% endif %}
 {% ifinstalled cartridge.shop %}
 <link rel="stylesheet" href="{% static "css/cartridge.css" %}">
@@ -33,8 +32,8 @@
 
 {% compress js %}
 <script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
-<script src="{% static "js/bootstrap.js" %}"></script>
-<script src="{% static "js/bootstrap-extras.js" %}"></script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 {% block extra_js %}{% endblock %}
 {% endcompress %}
 
@@ -48,7 +47,7 @@
 
 <body id="{% block body_id %}body{% endblock %}">
 
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 <div class="container">
 <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -170,16 +169,18 @@
 <footer>
 <div class="container">
 
-<div class="row">
-    <p class="site-info text-center">
-        <a href="http://ccnmtl.columbia.edu" target="_blank">
-            <img id="footerlogo"
-                 src="http://mediathread.info/sites/default/files/logo_ccnmtl_white.png"
-                 width="200">
-        </a>
-        &copy; Columbia Center for New Media Teaching and Learning 2010-2015
-    </p>
-</div>
+    <div class="row">
+        <div class="col-xs-3">
+            <a href="http://ccnmtl.columbia.edu" target="_blank">
+                <img id="footerlogo"
+                     src="http://mediathread.info/sites/default/files/logo_ccnmtl_white.png"
+                     width="200">
+            </a>
+        </div>
+        <div class="col-xs-3 pull-right">
+            &copy; Columbia Center for New Media Teaching and Learning 2010-2015
+        </div>
+    </div>
 </div>
 </footer>
 
