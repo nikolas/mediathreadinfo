@@ -224,6 +224,7 @@ INSTALLED_APPS = (
     # "mezzanine.accounts",
     # "mezzanine.mobile",
     "django_jenkins",
+    "django_extensions",
     "mediathreadinfo",
 )
 

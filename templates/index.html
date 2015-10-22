@@ -100,21 +100,19 @@
 {% endblocktrans %}
 
 
-<div class="col-md-3 right">
+<div class="col-md-3 pull-right">
     <div class="view-header">
         <a href="http://twitter.com/mediathreadinfo" target="_blank">
             @mediathreadinfo on twitter
         </a>
     </div>
-    {% include "includes/language_selector.html" %}
-    {% include "includes/user_panel.html" %}
 
     <div class="panel panel-default">
-    <div class="panel-body">
-    {% block right_panel %}
-    {% include "twitter/tweets.html" %}
-    {% endblock %}
-    </div>
+        <div class="panel-body">
+            {% block right_panel %}
+            {% include "twitter/tweets.html" %}
+            {% endblock %}
+        </div>
     </div>
     <div class="view-footer">
         <a href="http://twitter.com/mediathreadinfo" target="_blank">
